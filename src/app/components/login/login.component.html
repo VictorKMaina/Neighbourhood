@@ -15,25 +15,29 @@
 
 <body>
   <div class="container">
-    <form class="regForm">
-      <div class="form-group">
-        <label for="formGroupExampleInput">Email</label>
-        <input type="email" class="form-control" id="formGroupExampleInput" placeholder="Input Your Email">
-      </div>
-      <div class="form-group">
-        <label for="formGroupExampleInput2">Username</label>
-        <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Input your Username">
-      </div>
-      <div class="form-group">
-        <label for="formGroupExampleInput2">Password</label>
-        <input type="password" class="form-control" id="formGroupExampleInput2" placeholder="Password">
-      </div>
-      <div class="form-group">
-        <label for="formGroupExampleInput2">Confirm Password</label>
-        <input type="password" class="form-control" id="formGroupExampleInput2" placeholder="Confirm Password">
-      </div>
-      <button type="button" class="btn btn-primary">Submit</button>
-    </form>
+    <div class="logForm">
+      <form>
+        <h3 style="font-weight: bolder;">Sign In</h3>
+        <p>Please enter your Details to Login</p>
+
+        <div class="form-group">
+          <label for="formGroupExampleInput2">Username</label>
+          <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Input your Username">
+        </div>
+        <div class="form-group">
+          <label for="formGroupExampleInput2">Password</label>
+          <input type="password" class="form-control" id="formGroupExampleInput2" placeholder="Password">
+        </div>
+        <div>
+          <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
+        </div>
+        <div class="btn">
+         <button type="button" class="btn btn-primary">Login</button>
+        </div>
+       
+      </form>
+    </div>
+
 
   </div>
 
