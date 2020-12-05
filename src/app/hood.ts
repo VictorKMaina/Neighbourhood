@@ -1,6 +1,7 @@
 export class Hood {
-  user: number;
+  user: string;
   hood: string;
-  posted_at: Date;
   content: string;
+
+ 
 }
