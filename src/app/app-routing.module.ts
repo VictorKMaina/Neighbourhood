@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
+import { DashboardComponent } from './components/dashboard/dashboard.component';
 import { HomeComponent } from './components/home/home.component';
 import { LoginComponent } from './components/login/login.component';
 import { NotFoundComponent } from './components/not-found/not-found.component';
@@ -10,6 +11,7 @@ const routes: Routes = [
   { path: 'home', redirectTo: '' },
   { path: 'login', component: LoginComponent },
   { path: 'sign-up', component: RegistrationComponent },
+  { path: 'admin', component: DashboardComponent},
   { path: '**', component: NotFoundComponent },
 ];
 
