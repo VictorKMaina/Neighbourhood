@@ -7,12 +7,7 @@ import { Hood } from 'src/app/hood';
   styleUrls: ['./home.component.css']
 })
 export class HomeComponent implements OnInit {
-  hoods: Hood[] = [
-    new Hood(user: 'Jeff', hood: 'Juja', content: 'Lorem ipsum dolor')
-
-  ];
-
-
+  hoods = []
   constructor() { }
 
   ngOnInit(): void {
