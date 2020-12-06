@@ -11,6 +11,7 @@ import { HomeComponent } from './components/home/home.component';
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { RegistrationService } from './services/registration.service';
+import { DashboardComponent } from './components/dashboard/dashboard.component';
 
 
 @NgModule({
@@ -21,6 +22,7 @@ import { RegistrationService } from './services/registration.service';
     NavbarComponent,
     NotFoundComponent,
     HomeComponent,
+    DashboardComponent,
   ],
   imports: [
     BrowserModule,
