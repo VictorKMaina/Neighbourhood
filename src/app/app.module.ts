@@ -12,6 +12,7 @@ import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { RegistrationService } from './services/registration.service';
 import { DashboardComponent } from './components/dashboard/dashboard.component';
+import { PostFormComponent } from './components/post-form/post-form.component';
 
 
 @NgModule({
@@ -23,6 +24,7 @@ import { DashboardComponent } from './components/dashboard/dashboard.component';
     NotFoundComponent,
     HomeComponent,
     DashboardComponent,
+    PostFormComponent,
   ],
   imports: [
     BrowserModule,
