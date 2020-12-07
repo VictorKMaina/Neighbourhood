@@ -6,9 +6,11 @@ import { Injectable } from '@angular/core';
 })
 export class RegistrationService {
 
-  sendForm(user){ 
-  return this.http.post("http://neighbourhood-back.herokuapp.com/api/auth/signup/", user)
+  sendForm(user) {
+    console.log(JSON.stringify(user));
+
+    return this.http.post("http://neighbourhood-back.herokuapp.com/api/auth/signup/", user)
   }
 
-  constructor(private http:HttpClient) {}
+  constructor(private http: HttpClient) { }
 }
