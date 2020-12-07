@@ -1,3 +1,4 @@
 export const environment = {
-  production: true
+  api_url: 'https://neighbourhood-back.herokuapp.com',
+  production: true,
 };
