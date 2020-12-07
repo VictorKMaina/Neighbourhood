@@ -20,13 +20,14 @@ export class AuthService {
 
     try {
       this.http.get(this.userUrl+user_id, {headers: token_header}).subscribe((data:User) => {
-      this.user = data;
+        this.user = data;
     })
 
       return this.user.is_active
 
     } catch (error) {
-      console.log(error) 
+      console.error(error)
+      return false;
     }
   }
 }
