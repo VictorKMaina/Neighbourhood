@@ -1,8 +1,8 @@
 import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
 import { User } from 'src/app/class/user';
-import { UserLogin } from "src/app/interfaces/user";
-import { HttpService } from "../../services/http.service";
+import { UserLogin } from "src/app/interfaces/userLogin";
+import { LoginService } from 'src/app/services/login.service';
 
 @Component({
   selector: 'app-login',
@@ -11,14 +11,13 @@ import { HttpService } from "../../services/http.service";
 })
 export class LoginComponent implements OnInit {
 
-  user:UserLogin = {username:'', password:''}
-  activeUser:any = 'No logged in user'
-  
+  public user:UserLogin = {username:'', password:''}
+
   loginUser(){
-    this.activeUser = this.api.loginUser(this.user)
+    this.login.storeToken(this.user)
   }
 
-  constructor(private api:HttpService) { }
+  constructor(private login:LoginService) { }
 
   ngOnInit(): void {
   }
