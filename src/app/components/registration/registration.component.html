@@ -1,25 +1,35 @@
 <div class="container">
   <div class="regForm">
-    <form>
+    <div>
       <h3 style="font-weight: bolder;">Sign Up</h3>
       <p>Please fill in this form to create an account.</p>
       <div class="form-group">
+        <label for="formGroupExampleInput">First Name</label>
+        <input type="text" class="form-control" [(ngModel)]="first_name" id="firstName"
+          placeholder="Input Your First Name">
+      </div>
+      <div class="form-group">
+        <label for="formGroupExampleInput">Last Name</label>
+        <input type="text" class="form-control" [(ngModel)]="last_name" id="lastName"
+          placeholder="Input Your Last Name">
+      </div>
+      <div class="form-group">
         <label for="formGroupExampleInput">Email</label>
-        <input type="email" class="form-control" id="formGroupExampleInput" placeholder="Input Your Email">
+        <input type="email" class="form-control" [(ngModel)]="email" id="email" placeholder="Input Your Email">
       </div>
       <div class="form-group">
         <label for="formGroupExampleInput2">Username</label>
-        <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Input your Username">
+        <input type="text" class="form-control" [(ngModel)]="username" id="username" placeholder="Input your Username">
       </div>
       <div class="form-group">
         <label for="formGroupExampleInput2">Password</label>
-        <input type="password" class="form-control" id="formGroupExampleInput2" placeholder="Password">
+        <input type="password" class="form-control" [(ngModel)]="password" id="password" placeholder="Password">
       </div>
       <div class="form-group">
         <label for="formGroupExampleInput2">Confirm Password</label>
-        <input type="password" class="form-control" id="formGroupExampleInput2" placeholder="Confirm Password">
+        <input type="password" class="form-control" id="cpassword" placeholder="Confirm Password">
       </div>
-      <button type="button" class="btn btn-primary">Submit</button>
-    </form>
+      <button type="button" (click)="OnSubmit()" class="btn btn-primary">Submit</button>
+    </div>
   </div>
 </div>
