@@ -3,22 +3,23 @@ import { Injectable } from '@angular/core';
 import { User } from '../class/user';
 import { catchError } from "rxjs/operators";
 import { throwError } from 'rxjs';
+import { environment } from 'src/environments/environment';
 
 @Injectable({
   providedIn: 'root',
 })
 export class RegistrationService {
+  api_url = `${environment.api_url}api/auth/signup/`;
 
-  errors;
-
-  private handleError(error: HttpErrorResponse) {
-    this.errors = error.error
-    return throwError(error.error);
-  }
 
   sendForm(user) {
-    this.http.post<User>('http://neighbourhood-back.herokuapp.com/api/auth/signup/', user).toPromise()
-    .then(res=>{}, rej=>{})
+    this.http
+      .post<User>(this.api_url, user)
+      .toPromise()
+      .then(
+        (res) => {},
+        (rej) => {}
+      );
   }
   constructor(private http: HttpClient) {}
 }
