@@ -9,7 +9,7 @@ import { environment } from 'src/environments/environment';
   providedIn: 'root',
 })
 export class RegistrationService {
-  api_url = `${environment.api_url}api/auth/signup/`;
+  api_url = `${environment.api_url}/api/auth/signup/`;
 
 
   sendForm(user) {
