@@ -1,5 +1,11 @@
-<nav class="navbar navbar-expand-md navbar-light bg-dark">
-  <a class="navbar-brand text-white" routerLink="">THE HOOD</a>
+<nav class="navbar navbar-expand-md navbar-light bg-light">
+  <a routerLink='/'>
+    <div class="navbar-brand d-flex align-items-center">
+      <span class="iconify" data-icon="mdi-home" data-inline="false" data-width="23" data-height="23"></span>
+      <span class="ml-2">Hood</span>
+    </div>
+  </a>
+
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
     aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
@@ -8,16 +14,16 @@
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav mr-auto">
       <li class="nav-item active">
-        <a class="nav-link text-white" routerLink="">Home <span class="sr-only">(current)</span></a>
+        <a class="nav-link" routerLink="/">Home <span class="sr-only">(current)</span></a>
       </li>
       <li class="nav-item">
-        <a class="nav-link text-white" routerLink="login">Log In</a>
+        <a class="nav-link" routerLink="login">Log In</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link text-white" routerLink="sign-up">Sign Up</a>
+        <a class="nav-link" routerLink="sign-up">Sign Up</a>
       </li>
-          <li class="nav-item">
-        <a class="nav-link text-white" routerLink="admin">Admin</a>
+      <li class="nav-item">
+        <a class="nav-link" routerLink="admin">Admin</a>
       </li>
     </ul>
     <form class="form-inline my-2 my-lg-0">
