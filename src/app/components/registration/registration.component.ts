@@ -2,7 +2,6 @@ import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { User } from "../../class/user";
 import { RegistrationService } from 'src/app/services/registration.service';
-import { resolve } from 'dns';
 
 @Component({
   selector: 'app-registration',
