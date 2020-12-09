@@ -5,11 +5,11 @@ The Hood is a web application that provides a platform for residents of various 
 
 ## Back-end
 
-This repo hosts the front-end side of the that is built in Angular. The app has a back-end that is deployed separately. You can find the repo [here](https://github.com/SharonFaith/neighbourhood-backend).
+This repo hosts the front-end side of the application that is built in Angular. The app has a back-end that is deployed separately. You can find the repo [here](https://github.com/SharonFaith/neighbourhood-backend).
 
 ## Installation
 
-To run this app locally on your Ubuntu computer, simply clone this repo. For this you will first need to install Git.
+To run the app locally on your Ubuntu computer, simply clone this repo. For this you will first need to install Git.
 
 ```
 sudo apt install git
@@ -20,7 +20,7 @@ To run the application you will also need to install Angular and npm. You can fi
 
 ## Usage
 
-Once you have install Angular, you can use the Angular CLI to run the application on a local server.
+Once you have installed Angular, you can use the Angular CLI to run the application on a local server.
 
 ```
 ng serve
